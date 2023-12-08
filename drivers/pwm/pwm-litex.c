@@ -79,7 +79,6 @@ static int litex_pwm_apply(struct pwm_chip *chip, struct pwm_device *pwm,
 
 static const struct pwm_ops litex_pwm_ops = {
 	.apply = litex_pwm_apply,
-	.owner = THIS_MODULE,
 };
 
 static int litex_pwm_probe(struct platform_device *pdev)
